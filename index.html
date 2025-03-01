@@ -8,18 +8,18 @@
 </head>
 <body>
   <div class="container">
-    <h1 id="count">Counter: 0</h1>
+    <div class="buttons top-buttons">
+      <button id="undo">Undo</button>
+      <button id="redo">Redo</button>
+    </div>
     <div class="buttons">
+      <button class="decrement" data-value="-100">-100</button>
+      <button class="decrement" data-value="-10">-10</button>
+      <button class="decrement" data-value="-1">-1</button>
+      <h1 id="count">0</h1>
       <button class="increment" data-value="1">+1</button>
       <button class="increment" data-value="10">+10</button>
       <button class="increment" data-value="100">+100</button>
-      <button class="decrement" data-value="-1">-1</button>
-      <button class="decrement" data-value="-10">-10</button>
-      <button class="decrement" data-value="-100">-100</button>
-    </div>
-    <div class="buttons">
-      <button id="undo">Undo</button>
-      <button id="redo">Redo</button>
     </div>
     <h2>History</h2>
     <ul id="history"></ul>
