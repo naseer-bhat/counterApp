@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter with Undo/Redo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="count">Counter: 0</h1>
+    <div class="buttons">
+      <button class="increment" data-value="1">+1</button>
+      <button class="increment" data-value="10">+10</button>
+      <button class="increment" data-value="100">+100</button>
+      <button class="decrement" data-value="-1">-1</button>
+      <button class="decrement" data-value="-10">-10</button>
+      <button class="decrement" data-value="-100">-100</button>
+    </div>
+    <div class="buttons">
+      <button id="undo">Undo</button>
+      <button id="redo">Redo</button>
+    </div>
+    <h2>History</h2>
+    <ul id="history"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
